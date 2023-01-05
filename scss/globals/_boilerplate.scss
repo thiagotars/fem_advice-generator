@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    font-size: 62.5%;
+    display: grid;
+    place-items: center;
+    
+    body {
+        background-color: var(--dark-blue);
+        font-family: var(--font);
+    }
+}

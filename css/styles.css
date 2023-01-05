@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+  display: grid;
+  place-items: center;
+}
+html body {
+  background-color: var(--dark-blue);
+  font-family: var(--font);
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+:root {
+  --font: "Manrope", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 2rem;
+  padding: 3.85rem 2rem;
+  max-width: 34.5rem;
+  border-radius: 1rem;
+  background-color: var(--dark-grayish-blue);
+}
+.container .advice-number {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--neon-green);
+}
+.container .advice-quote {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--light-cyan);
+}
+.container .divider-desktop {
+  display: none;
+}
+.container .divider-mobile {
+  display: block;
+  margin: 0 auto 2.4rem;
+  width: 100%;
+}
+.container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 2rem;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 50%;
+  bottom: -3.2rem;
+  background-color: var(--neon-green);
+  transition: 250ms;
+  cursor: pointer;
+}
+.container .button .dice {
+  transform: 250ms;
+}
+.container button:hover {
+  box-shadow: 0px 0px 20px var(--neon-green);
+}
+.container button:active {
+  transform: rotate(135deg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 54rem;
+    padding: 4.8rem;
+  }
+  .container .advice-number {
+    font-size: 1.4rem;
+  }
+  .container .advice-quote {
+    margin: 3.2rem 0;
+    font-size: 2.8rem;
+  }
+  .container .divider-mobile {
+    display: none;
+    margin-bottom: 1rem;
+  }
+  .container .divider-desktop {
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
